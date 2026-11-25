@@ -1,352 +1,166 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#10091d">
-<meta name="description" content="Official legal and WhatsApp support website for XOLO Gay, an 18+ dating and social platform.">
-<title>XOLO Gay | Official Website</title>
+<meta name="description" content="XOLO official legal and support website: privacy, terms, community standards, 18+ safety and account deletion.">
+<title>XOLO | Official Legal &amp; Support</title>
 <style>
-:root{
---bg:#0b0812;--panel:#191123;--text:#f8f3ff;
---muted:#c1b4ce;--accent:#c084fc;--pink:#ec4899;
---line:#382746;--green:#25d366
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-margin:0;background:radial-gradient(ellipse at top,#351348,#0b0812 60%);
-color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.7
-}
-header{
-padding:48px 18px;text-align:center;
-background:linear-gradient(135deg,#21102e,#48165b,#25102f);
-border-bottom:1px solid var(--line)
-}
-.logo{
-font-size:46px;font-weight:900;letter-spacing:6px;
-background:linear-gradient(90deg,#f1baff,#b879ff,#ff9bd5);
--webkit-background-clip:text;background-clip:text;color:transparent
-}
-.tagline{color:#e5d3f4}
-.age{
-display:inline-block;border:1px solid #d7a1ff;
-border-radius:30px;padding:5px 16px;font-size:13px;margin-top:10px
-}
-nav{
-position:sticky;top:0;z-index:10;background:#100b19f5;
-border-bottom:1px solid var(--line);padding:12px;
-display:flex;gap:9px;overflow-x:auto
-}
-nav a{
-white-space:nowrap;color:#f0e3fa;text-decoration:none;
-border:1px solid var(--line);padding:8px 14px;
-border-radius:22px;font-size:13px
-}
+:root{color-scheme:dark;--bg:#0b0812;--panel:#191123;--panel2:#21152d;--text:#f8f3ff;--muted:#c1b4ce;--accent:#c084fc;--pink:#ec4899;--line:#382746;--green:#25d366}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{margin:0;background:radial-gradient(ellipse at top,#351348,#0b0812 60%);color:var(--text);font:16px/1.72 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+a{color:#e2aaff;text-underline-offset:3px}a:hover{color:#ffc0e1}
+header{padding:52px 18px 40px;text-align:center;background:linear-gradient(135deg,#21102e,#48165b,#25102f);border-bottom:1px solid var(--line)}
+.logo{font-size:clamp(40px,8vw,56px);font-weight:900;letter-spacing:.18em;padding-left:.18em;line-height:1.15;background:linear-gradient(90deg,#f1baff,#b879ff,#ff9bd5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{margin:10px 0 4px;color:#e5d3f4;font-size:17px}.age{display:inline-block;border:1px solid #d7a1ff;border-radius:30px;padding:5px 16px;font-size:12px;letter-spacing:.07em;margin-top:12px}
+nav{position:sticky;top:0;z-index:10;background:#100b19f5;border-bottom:1px solid var(--line);padding:11px max(12px,calc((100% - 920px)/2));display:flex;gap:9px;overflow-x:auto;backdrop-filter:blur(12px)}
+nav a{white-space:nowrap;color:#f0e3fa;text-decoration:none;border:1px solid var(--line);padding:7px 13px;border-radius:22px;font-size:13px}
 nav a:hover{background:#54266e}
-main{max-width:900px;margin:28px auto;padding:0 15px}
-.card{
-background:linear-gradient(145deg,#1b1225,#130e1b);
-border:1px solid var(--line);border-radius:18px;
-padding:25px;margin-bottom:22px;scroll-margin-top:85px
-}
-h1{font-size:27px;margin-top:0}
-h2{color:#e5b8ff;font-size:21px;margin-top:26px}
-p,li{color:#d8ccdf}
-.small{font-size:13px;color:var(--muted)}
-a{color:#e2aaff}
-.button{
-display:inline-block;background:linear-gradient(90deg,#8b35c5,#d044a3);
-color:white!important;text-decoration:none;border-radius:12px;
-padding:12px 19px;font-weight:bold;margin:8px 5px 8px 0
-}
-.whatsapp{
-background:#168d48;color:white!important;
-display:inline-block;padding:13px 20px;border-radius:12px;
-font-weight:bold;text-decoration:none;margin:8px 0
-}
-.notice{
-border-left:3px solid var(--accent);
-padding:12px 15px;background:#24162f;border-radius:8px
-}
-footer{
-text-align:center;padding:35px 15px;
-color:var(--muted);border-top:1px solid var(--line)
-}
-ul{padding-left:22px}
-@media(max-width:600px){
-header{padding:35px 14px}
-.logo{font-size:37px}
-.card{padding:19px}
-h1{font-size:24px}
-}
+main{max-width:920px;margin:28px auto 48px;padding:0 15px}
+.intro,.card{background:linear-gradient(145deg,#1b1225,#130e1b);border:1px solid var(--line);border-radius:18px;box-shadow:0 16px 40px #0004}
+.intro{padding:20px 24px;margin-bottom:22px}.card{padding:clamp(20px,4vw,29px);margin-bottom:22px;scroll-margin-top:85px}
+h1{font-size:clamp(25px,5vw,30px);line-height:1.25;margin:0 0 5px}h2{color:#e5b8ff;font-size:20px;margin:26px 0 7px;line-height:1.35}
+p,li{color:#d8ccdf}p{margin:10px 0}ul,ol{padding-left:23px}li{margin:6px 0}
+.small,.meta{font-size:13px;color:var(--muted)}.meta{margin:0 0 17px}
+.notice{border-left:3px solid var(--accent);padding:13px 15px;background:#24162f;border-radius:8px;margin:17px 0;color:#eadcf2}
+.button{display:inline-block;background:linear-gradient(90deg,#8b35c5,#d044a3);color:#fff!important;text-decoration:none;border-radius:12px;padding:12px 19px;font-weight:750;margin:8px 6px 5px 0}
+.whatsapp{background:#168d48}.button:hover{filter:brightness(1.1)}
+footer{text-align:center;padding:34px 15px;color:var(--muted);border-top:1px solid var(--line);background:#10091dbb}
+footer .logo{font-size:29px}.footerlinks{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 18px;margin:14px 0}
+:focus-visible{outline:2px solid #e2aaff;outline-offset:3px}
+@media(max-width:600px){header{padding:38px 14px}main{padding:0 10px;margin-top:18px}.card{padding:19px}nav{padding:10px}.button{display:block;text-align:center;margin-right:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-
 <header>
-<div class="logo">XOLO</div>
+<div class="logo" aria-label="XOLO">XOLO</div>
 <div class="tagline">Meet. Connect. Be Yourself.</div>
 <div class="age">STRICTLY 18+ · ADULT COMMUNITY</div>
-<p>Official Legal & Support Website</p>
+<p>Official Legal &amp; Support Website</p>
 </header>
-
-<nav>
-<a href="#privacy">Privacy</a>
-<a href="#terms">Terms</a>
-<a href="#community">Guidelines</a>
-<a href="#safety">18+ Safety</a>
-<a href="#delete-account">Delete Account</a>
-<a href="#contact">Contact Us</a>
+<nav aria-label="Main navigation">
+<a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#community">Guidelines</a><a href="#safety">18+ Safety</a><a href="#delete">Delete Account</a><a href="#contact">Contact</a>
 </nav>
-
 <main>
+<div class="intro"><strong>Welcome to XOLO.</strong><p>This website explains the terms for using XOLO and provides information about privacy, community standards, adult safety, account deletion and support. XOLO is intended only for adults aged 18 and over.</p><p class="small">Please ensure these documents accurately reflect the app's current features, data practices and operating procedures before publishing.</p></div>
 
 <section class="card" id="privacy">
-<h1>Privacy Policy</h1>
-<p class="small">XOLO Gay · Last updated: November 15, 2026</p>
-
-<p>This Privacy Policy explains how XOLO Gay ("XOLO", "we", "our" or "the app") handles information when you use our adult dating and social chat platform.</p>
-
+<h1>Privacy Policy</h1><p class="meta">XOLO · Last updated: 26 November 2026</p>
+<p>This Privacy Policy explains how XOLO ("we", "us" or "our") may collect, use, store and disclose information when you use our adult dating and social-connection application (the "Service").</p>
 <h2>1. Information We May Collect</h2>
 <ul>
 <li><b>Account information:</b> Email address, authentication details and account identifiers.</li>
-<li><b>Profile information:</b> Display name, date of birth, profile description, interests and photographs you choose to provide.</li>
-<li><b>XOLO ID:</b> A unique identifier assigned to your profile.</li>
-<li><b>Messages and media:</b> Messages, photographs and group chat content you send or receive.</li>
-<li><b>Location information:</b> City or approximate location information when you choose to provide it or enable relevant features.</li>
-<li><b>Device information:</b> Basic technical information, diagnostics and notification tokens where required.</li>
-<li><b>Safety information:</b> Reports, blocks and information submitted to support.</li>
+<li><b>Profile information:</b> Display name, date of birth or age information, profile description, interests and photographs you choose to provide.</li>
+<li><b>XOLO ID:</b> A unique identifier associated with your profile.</li>
+<li><b>Messages and media:</b> Messages, photographs and group-chat content you send, upload, receive or share through the Service.</li>
+<li><b>Location information:</b> City-level or approximate location information when you choose to provide it or enable a relevant feature.</li>
+<li><b>Device information:</b> Technical information, diagnostics, logs and notification tokens where needed to operate or secure the Service.</li>
+<li><b>Safety and support information:</b> Reports, blocks and information you provide to support.</li>
+<li><b>Subscription/payment references:</b> Plan selection, payment status and transaction references needed to process or verify a subscription request.</li>
 </ul>
-
 <h2>2. How We Use Information</h2>
-<ul>
-<li>Create and maintain user accounts.</li>
-<li>Display profiles and support nearby discovery.</li>
-<li>Provide private and group messaging.</li>
-<li>Deliver account and security notifications.</li>
-<li>Process Premium requests and account support.</li>
-<li>Prevent spam, fraud, abuse and violations.</li>
-<li>Respond to user requests and legal obligations.</li>
-</ul>
-
+<ul><li>Create, authenticate and maintain accounts.</li><li>Display profiles and provide discovery and matching features.</li><li>Enable private and group messaging.</li><li>Deliver account and security notifications.</li><li>Manage subscription requests and payment verification.</li><li>Detect and help prevent spam, fraud, abuse and policy violations.</li><li>Respond to support requests and comply with applicable legal obligations.</li><li>Maintain, troubleshoot and improve Service security and reliability.</li></ul>
 <h2>3. Storage and Service Providers</h2>
-<p>XOLO uses Supabase services for backend functions such as authentication, database operations and storage. Information may be processed by service providers needed to operate the app. Their handling of information is subject to their applicable terms and privacy policies.</p>
-<p>If Firebase or other notification services are enabled, relevant device and notification information may also be processed by those providers.</p>
-
-<h2>4. Photos and Messages</h2>
-<p>Private chat photographs and messages are intended for the participants of the relevant conversation. Access controls are intended to protect private media.</p>
-<p>View Once is designed to restrict repeated viewing through supported app functionality. It cannot guarantee prevention of every possible screenshot, external camera capture or copy.</p>
-
+<p>XOLO uses Supabase for backend services such as authentication, database operations and storage. Depending on the features enabled in the app, other infrastructure, hosting, analytics, crash-reporting or notification providers may also process information to provide services to XOLO. Their processing is subject to their applicable terms and privacy documentation.</p>
+<p>Only list providers that are actually integrated into the released app. The app operator should keep this section accurate as providers and integrations change.</p>
+<h2>4. Photos, Messages and User Content</h2>
+<p>Content sent in a private conversation is intended for the participants in that conversation. Content shared in a group may be visible to group members. Access controls are intended to limit access to private content, but recipients may copy, capture or redistribute content.</p>
+<p>Any "View Once" feature is designed to limit repeat viewing within supported app functionality. It cannot guarantee prevention of screenshots, external-camera capture, recording or other copies outside the app's control.</p>
 <h2>5. Location Privacy</h2>
-<p>Location-related features are intended to use approximate location or city-level information. XOLO is not intended to display your exact location to other users. Avoid putting your home address or sensitive location details in your profile.</p>
-
+<p>Where location features are available, XOLO is intended to use approximate or city-level information rather than display a user's precise location to other users. Actual collection and display depend on the app version, device permissions and enabled settings. Do not place your home address or other sensitive location details in your profile or messages.</p>
 <h2>6. Sharing of Information</h2>
-<p>We do not offer personal information for sale. Information may be processed by infrastructure providers, shared with users when you choose to publish or send it, or disclosed when legally required or necessary to protect users and the service.</p>
-
+<p>We do not sell personal information. Information may be visible to other users when you choose to publish or send it; processed by providers that help operate and secure the Service; disclosed where required by law; or used where reasonably necessary to investigate abuse, protect users, enforce our terms or protect XOLO and others.</p>
 <h2>7. Data Security</h2>
-<p>We use technical and organizational safeguards intended to protect account and app information. No online service can guarantee complete security.</p>
-
+<p>We use technical and organizational safeguards intended to protect information, including access controls and security measures appropriate to the Service. No electronic storage or transmission method can be guaranteed completely secure.</p>
 <h2>8. Data Retention</h2>
-<p>Information is retained as needed to operate the service, maintain security, resolve disputes and comply with applicable obligations. Retention periods may vary depending on the type and purpose of the information.</p>
-
-<h2>9. Your Choices</h2>
-<ul>
-<li>Edit information available through profile settings.</li>
-<li>Control available privacy and notification settings.</li>
-<li>Block and report other users.</li>
-<li>Request account deletion through the process described on this website.</li>
-</ul>
-
+<p>Information is retained for as long as reasonably necessary to provide the Service, maintain security, handle disputes and meet legal obligations. Retention periods vary by information type and purpose. Limited records may be retained where required or permitted by law or necessary for fraud prevention, security or dispute resolution.</p>
+<h2>9. Your Choices and Requests</h2>
+<ul><li>Review or update profile information through available app settings.</li><li>Use available privacy and notification controls.</li><li>Block or report users and content.</li><li>Contact us with privacy questions or requests.</li><li>Request account deletion using the process on this website.</li></ul>
+<p>Depending on applicable law and your location, you may have additional rights concerning your personal information. We may need to verify your identity before acting on a request.</p>
 <h2>10. Children's Privacy</h2>
-<p>XOLO Gay is intended exclusively for adults aged 18 and above. Children are not permitted to create accounts or use the service.</p>
-
+<p>XOLO is intended exclusively for adults aged 18 and over. Minors are not permitted to create accounts or use the Service. If you believe a minor is using XOLO, report the account through the app or contact support.</p>
 <h2>11. Changes to This Policy</h2>
-<p>We may update this Privacy Policy when our service or legal requirements change. The latest version will be published on this website.</p>
-
-<h2>12. Privacy Questions</h2>
-<p>For privacy questions, contact XOLO through our official WhatsApp support channel.</p>
-<a class="whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20have%20a%20privacy%20question." target="_blank" rel="noopener noreferrer">WhatsApp Privacy Support</a>
+<p>We may update this Policy to reflect changes to the Service, our practices or legal requirements. The latest version will be published here with a revised update date. Where required, we will provide additional notice.</p>
+<h2>12. Privacy Contact</h2>
+<p>For privacy questions or requests, contact XOLO through our official WhatsApp support channel. Do not send passwords, OTPs, UPI PINs or full banking credentials.</p>
+<a class="button whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20have%20a%20privacy%20question." target="_blank" rel="noopener noreferrer">WhatsApp Privacy Support</a>
 </section>
 
 <section class="card" id="terms">
-<h1>Terms & Conditions</h1>
-<p class="small">Last updated: November 15, 2026</p>
-
-<p>By creating or using an XOLO Gay account, you agree to these Terms. If you do not agree, do not use the service.</p>
-
-<h2>1. Eligibility</h2>
-<p>You must be at least 18 years old to register or use XOLO.</p>
-
-<h2>2. Account Responsibility</h2>
-<ul>
-<li>Provide accurate registration information.</li>
-<li>Keep login credentials secure.</li>
-<li>Do not impersonate another person.</li>
-<li>Do not create accounts to evade a suspension.</li>
-<li>You are responsible for activity carried out through your account.</li>
-</ul>
-
-<h2>3. Acceptable Use</h2>
-<p>You must not use XOLO for harassment, threats, scams, stalking, exploitation, unlawful activity or sharing content without the necessary rights or consent.</p>
-
-<h2>4. User Content</h2>
-<p>You are responsible for the content, photographs, messages and information you submit. You must have the necessary rights and permissions to share that content.</p>
-
-<h2>5. Dating and Personal Safety</h2>
-<p>Use caution when interacting with people online or arranging in-person meetings. Do not share passwords, financial details, verification codes or sensitive personal information with other users.</p>
-
-<h2>6. Blocking and Reporting</h2>
-<p>Users may block or report accounts and content. Reports may be reviewed and appropriate action may be taken, including content removal or account restrictions.</p>
-
-<h2>7. Premium Services</h2>
-<p>Premium features, pricing, eligibility and activation conditions will be shown in the app. Submitting payment information or a UTR does not itself guarantee Premium activation. Payment verification may be required.</p>
-
-<h2>8. Suspension and Termination</h2>
-<p>We may restrict or suspend accounts that violate these Terms, threaten user safety or misuse the service. You may request account deletion using the process on this website.</p>
-
-<h2>9. Service Availability</h2>
-<p>We work to keep XOLO available but do not guarantee uninterrupted operation. Features may change or be temporarily unavailable.</p>
-
-<h2>10. Changes</h2>
-<p>We may update these Terms. The latest version will be published on this website.</p>
-
-<h2>11. Contact</h2>
-<p>For questions about these Terms, contact us through WhatsApp support.</p>
-<a class="whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20have%20a%20question%20about%20the%20Terms." target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
+<h1>Terms &amp; Conditions</h1><p class="meta">XOLO · Last updated: 26 November 2026</p>
+<p>These Terms govern access to and use of the XOLO application and related services (the "Service"). By creating an account or using the Service, you agree to these Terms. If you do not agree, do not use XOLO.</p>
+<h2>1. Eligibility</h2><p>You must be at least 18 years old and legally able to enter into these Terms. Anyone under 18 is prohibited from registering or using the Service.</p>
+<h2>2. Account Responsibilities</h2>
+<ul><li>Provide accurate and non-misleading registration information.</li><li>Keep your login credentials secure.</li><li>Do not impersonate another person or misrepresent your age or identity.</li><li>Do not create accounts to evade restrictions or suspensions.</li><li>Notify us if you believe your account has been accessed without permission.</li><li>You are responsible for activity through your account, subject to applicable law.</li></ul>
+<h2>3. Acceptable Use</h2><p>Use XOLO lawfully and respectfully. Do not harass, threaten, stalk, exploit, defraud or intimidate others; distribute unlawful content; violate another person's privacy or rights; interfere with the Service; or attempt unauthorized access to accounts, systems or data.</p>
+<h2>4. User Content</h2><p>You are responsible for content you upload, publish or send, including photographs, profile details and messages. You must have the rights and permissions needed to share it. You must not upload unlawful, non-consensual, deceptive, infringing or prohibited content.</p>
+<p>To operate the Service, you grant XOLO a limited, non-exclusive permission to host, store, process, transmit and display your content as needed to provide the features you choose to use. This permission ends when content is deleted from the Service, subject to reasonable technical delays, backups and lawful retention.</p>
+<h2>5. Dating, Consent and Personal Safety</h2><p>XOLO helps adults connect; it does not verify every statement made by users or guarantee any member's identity, intentions or conduct. Use caution online and when arranging in-person meetings. Respect consent and boundaries. Never share passwords, OTPs, UPI PINs or sensitive financial information with other users.</p>
+<h2>6. Blocking, Reporting and Moderation</h2><p>Use available blocking and reporting tools. We may review reports and take appropriate action, including removing content, limiting features, suspending accounts or terminating access. We may take urgent action where reasonably necessary to protect users or the Service.</p>
+<h2>7. Premium Services and Payments</h2><p>Premium features, plan availability, prices, duration and activation conditions are shown in the app and may change prospectively. A payment submission, screenshot or transaction reference does not itself guarantee Premium activation. Activation is subject to successful verification and the applicable in-app process.</p>
+<p>Before paying, review the plan, amount, duration and payment instructions shown in the app. For payment concerns, contact official support. Never share your UPI PIN, password or OTP.</p>
+<h2>8. Suspension and Termination</h2><p>We may restrict, suspend or terminate access where we reasonably believe an account breaches these Terms or Community Guidelines, creates a safety or security risk, or is used unlawfully. You may stop using XOLO at any time and request account deletion through this website.</p>
+<h2>9. Service Availability and Changes</h2><p>We aim to keep XOLO reliable but do not guarantee uninterrupted or error-free availability. Features may be updated, suspended or discontinued for operational, security or legal reasons.</p>
+<h2>10. Disclaimers</h2><p>To the extent permitted by applicable law, XOLO is provided on an "as available" basis. We do not guarantee that interactions with other users will be safe, successful or free from misconduct. Use your own judgment when sharing information or meeting people.</p>
+<h2>11. Limitation of Liability</h2><p>Nothing in these Terms excludes or limits liability that cannot lawfully be excluded or limited. To the extent permitted by applicable law, XOLO will not be liable for indirect, incidental, special or consequential loss arising from use of the Service, user interactions or temporary interruptions.</p>
+<h2>12. Changes to These Terms</h2><p>Revised Terms will be published here with an updated date. Continued use after revised Terms take effect indicates acceptance to the extent permitted by applicable law.</p>
+<h2>13. Governing Law and Contact</h2><p>The governing-law and jurisdiction provisions must reflect the legal entity operating XOLO and the laws applicable to that entity. For questions about these Terms, contact support.</p>
+<a class="button whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20have%20a%20question%20about%20the%20Terms." target="_blank" rel="noopener noreferrer">WhatsApp Terms Support</a>
 </section>
 
 <section class="card" id="community">
-<h1>Community Guidelines</h1>
-<p>XOLO is intended to be a respectful and safe community for adults. Every member is expected to follow these guidelines.</p>
-
-<h2>Respect Everyone</h2>
-<ul>
-<li>Treat members with dignity and respect.</li>
-<li>Respect personal boundaries and consent.</li>
-<li>Do not harass, threaten, intimidate or bully anyone.</li>
-<li>Do not discriminate against people based on identity or personal characteristics.</li>
-</ul>
-
-<h2>Prohibited Content and Behaviour</h2>
-<ul>
-<li>Sexual content involving minors or anyone under 18.</li>
-<li>Non-consensual intimate images or threats to share them.</li>
-<li>Blackmail, extortion, scams or impersonation.</li>
-<li>Threats, hate speech, stalking or targeted harassment.</li>
-<li>Spam, fake profiles and misleading financial requests.</li>
-<li>Sharing another person's private information without permission.</li>
-<li>Content that violates applicable laws.</li>
-</ul>
-
-<h2>Reporting and Moderation</h2>
-<p>Use in-app reporting and blocking tools where available. Reports may be reviewed to determine appropriate action. Serious or repeated violations may lead to account restrictions or removal.</p>
-
-<h2>Group Behaviour</h2>
-<p>Group members must respect other members, group rules and moderator decisions. Do not add people without respecting their consent or share private group content outside the group without permission.</p>
-
-<h2>Safety</h2>
-<p>Never send money to someone merely because they ask through chat. Be cautious with links and requests for verification codes.</p>
+<h1>Community Guidelines</h1><p class="meta">XOLO · Community standards</p>
+<p>XOLO is an adult dating and social-connection community for gay men. These Guidelines apply to profiles, messages, groups, media and all other areas of the Service.</p>
+<h2>1. Respect and Consent</h2><ul><li>Treat members with dignity and respect.</li><li>Respect personal boundaries and consent, including when someone declines contact.</li><li>Do not harass, threaten, intimidate, bully or repeatedly contact someone who asks you to stop.</li><li>Do not discriminate against or abuse people based on identity or personal characteristics.</li></ul>
+<h2>2. Prohibited Content and Behaviour</h2><ul><li>Any sexual, exploitative or inappropriate content involving a minor, or attempts to contact or solicit a minor.</li><li>Non-consensual intimate images, sexual exploitation or threats to publish intimate content.</li><li>Blackmail, extortion, scams, impersonation or deceptive financial requests.</li><li>Threats, hate speech, stalking, targeted harassment or encouragement of violence.</li><li>Spam, fake profiles, malicious links or attempts to obtain passwords, OTPs or financial credentials.</li><li>Sharing another person's private or identifying information without permission.</li><li>Content or conduct that violates applicable law or others' rights.</li></ul>
+<h2>3. Authentic Profiles</h2><p>Use a profile that represents you honestly. Do not misleadingly use another person's photographs or identity. Do not create deceptive accounts to evade restrictions or manipulate members.</p>
+<h2>4. Groups and Conversations</h2><p>Respect group rules and moderator decisions. Do not add people in ways that disregard their consent. Do not redistribute private conversations, group content or personal media outside the intended audience without permission.</p>
+<h2>5. Reporting and Enforcement</h2><p>Report concerning accounts or content through in-app tools where available, or contact support. Reports may be reviewed and proportionate action may be taken, including content removal, feature restrictions, suspension or account termination.</p>
+<h2>6. Stay Safe</h2><p>Be cautious with links, requests for money and requests for verification codes. Do not send money solely because someone asks through chat. Consider meeting in a public place and tell someone you trust about your plans.</p>
 </section>
 
 <section class="card" id="safety">
-<h1>18+ Age & Safety Policy</h1>
-
-<h2>Adults Only</h2>
-<p>XOLO Gay is an adult platform. Users must be 18 years of age or older. Minors are not permitted to register, browse or communicate through the service.</p>
-
-<h2>Age Misrepresentation</h2>
-<p>Do not provide a false age or use another person's identity. Accounts suspected of belonging to minors may be restricted while reviewed.</p>
-
-<h2>Consent and Respect</h2>
-<p>All interactions must be consensual. Unwanted sexual messages, harassment, threats and non-consensual sharing of intimate content are prohibited.</p>
-
-<h2>Meeting in Person</h2>
-<ul>
-<li>Consider meeting in a public place.</li>
-<li>Tell someone you trust about your plans.</li>
-<li>Arrange your own transport.</li>
-<li>Do not share your home address with strangers.</li>
-<li>Leave if you feel uncomfortable or unsafe.</li>
-</ul>
-
-<h2>Emergency Situations</h2>
-<p>XOLO is not an emergency response service. If you face immediate danger, contact appropriate local emergency services.</p>
-
-<h2>Report Safety Concerns</h2>
-<p>Contact our WhatsApp support channel with relevant details. Do not send passwords or OTPs.</p>
-<a class="whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20need%20to%20report%20a%20safety%20concern." target="_blank" rel="noopener noreferrer">Report a Safety Concern</a>
+<h1>18+ Age &amp; Safety Policy</h1><p class="meta">XOLO · Adults only</p>
+<h2>1. Adults Only</h2><p>XOLO is exclusively for adults aged 18 and over. Anyone under 18 is prohibited from registering, browsing member profiles or using communication features.</p>
+<h2>2. Age and Identity Misrepresentation</h2><p>Do not provide a false age or impersonate another person. Accounts reasonably suspected of belonging to a minor or involving age misrepresentation may be restricted while reviewed.</p>
+<h2>3. Consent and Respect</h2><p>All interactions must be consensual. Unwanted sexual messages, coercion, harassment, threats, exploitation and non-consensual sharing of intimate content are prohibited.</p>
+<h2>4. Safer In-Person Meetings</h2><ul><li>Consider meeting for the first time in a public place.</li><li>Tell someone you trust where you are going.</li><li>Arrange your own transport.</li><li>Avoid sharing your home address or sensitive personal details with someone you have just met.</li><li>Leave if you feel uncomfortable or unsafe.</li></ul>
+<h2>5. Emergency Situations</h2><p>XOLO is not an emergency-response service. If you are in immediate danger, contact appropriate local emergency services.</p>
+<h2>6. Report a Safety Concern</h2><p>Use in-app reporting and blocking tools where available, or contact support. Share only information relevant to the report. Never send passwords, OTPs or payment PINs.</p>
+<a class="button whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20need%20to%20report%20a%20safety%20concern." target="_blank" rel="noopener noreferrer">Report a Safety Concern</a>
 </section>
 
-<section class="card" id="delete-account">
-<h1>Account Deletion Request</h1>
-<p>You can request deletion of your XOLO Gay account and associated personal information using the process below.</p>
-
-<h2>How to Request Deletion</h2>
-<ol>
-<li>Open the WhatsApp account deletion link below.</li>
-<li>Provide the email address associated with your XOLO account and your XOLO ID, if available.</li>
-<li>Do not send your password, OTP or payment PIN.</li>
-<li>We may request reasonable verification to confirm account ownership.</li>
-</ol>
-
-<a class="whatsapp" href="https://wa.me/917836989477?text=I%20request%20deletion%20of%20my%20XOLO%20Gay%20account.%0A%0ARegistered%20account%20email%3A%0AXOLO%20ID%3A%0A%0AI%20understand%20that%20account%20ownership%20verification%20may%20be%20required." target="_blank" rel="noopener noreferrer">Request Account Deletion on WhatsApp</a>
-
-<h2>What Happens Next?</h2>
-<p>We will review the request and may verify account ownership before proceeding. Once verified, the account and associated personal information should be deleted in accordance with applicable requirements and our retention obligations.</p>
-
-<h2>Information That May Be Retained</h2>
-<p>Limited information may need to be retained where required by law or reasonably necessary for security, fraud prevention, dispute resolution or compliance. Any such retention should be limited to the relevant purpose.</p>
-
-<h2>Deleting the App</h2>
-<p>Uninstalling XOLO from your phone does not by itself delete your account. You must submit an account deletion request using the process above.</p>
-
-<h2>Need Help?</h2>
-<a class="whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20need%20help%20with%20account%20deletion." target="_blank" rel="noopener noreferrer">WhatsApp Account Support</a>
+<section class="card" id="delete">
+<h1>Account &amp; Data Deletion</h1><p class="meta">XOLO · Account deletion request</p>
+<p>You may request deletion of your XOLO account and associated personal information using the contact method below. Uninstalling the app does not delete your account.</p>
+<h2>1. How to Request Deletion</h2><ol><li>Open the account-deletion request link below.</li><li>Provide the email address associated with your XOLO account and your XOLO ID, if available.</li><li>State that you are requesting account deletion.</li><li>Complete reasonable account-ownership verification if requested.</li></ol>
+<div class="notice"><b>Security:</b> Never send your password, OTP, UPI PIN, payment PIN or complete banking credentials. Support does not need these to process a deletion request.</div>
+<a class="button whatsapp" href="https://wa.me/917836989477?text=I%20request%20deletion%20of%20my%20XOLO%20account.%0A%0ARegistered%20account%20email%3A%0AXOLO%20ID%20(if%20available)%3A%0A%0AI%20understand%20that%20account%20ownership%20verification%20may%20be%20required." target="_blank" rel="noopener noreferrer">Request Account Deletion</a>
+<h2>2. Verification and Processing</h2><p>We may request reasonable information to verify account ownership. We will review and process the request in accordance with applicable legal requirements and operational procedures. Processing time may depend on verification and the systems involved.</p>
+<h2>3. Information That May Be Retained</h2><p>Limited information may be retained where required by law or reasonably necessary for security, fraud prevention, dispute resolution or compliance. Retained information should be limited to the relevant purpose.</p>
+<h2>4. App Uninstallation</h2><p>Removing XOLO from your device only uninstalls the app. It does not submit an account-deletion request or automatically delete account data held by the Service.</p>
+<h2>5. Help</h2><a class="button whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20need%20help%20with%20account%20deletion." target="_blank" rel="noopener noreferrer">Account Deletion Support</a>
 </section>
 
 <section class="card" id="contact">
-<h1>Contact Us</h1>
-<p>Need help with your XOLO account, privacy, safety, Premium or another app-related issue? Contact our support team on WhatsApp.</p>
-
-<h2>Official WhatsApp Support</h2>
-<p><b>+91 7836989477</b></p>
-<a class="whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20need%20assistance." target="_blank" rel="noopener noreferrer">Chat with XOLO Support on WhatsApp</a>
-
-<h2>What to Include</h2>
-<ul>
-<li>Your XOLO ID, if available.</li>
-<li>A short description of your issue.</li>
-<li>Relevant non-sensitive screenshots, if helpful.</li>
-</ul>
-
-<div class="notice">
-<b>Security reminder:</b> Never share your password, OTP, UPI PIN or complete banking credentials with anyone, including support.
-</div>
+<h1>Contact XOLO Support</h1><p>For help with your account, privacy, safety, subscription or another app-related issue, contact our support team through the official WhatsApp channel.</p>
+<h2>Official WhatsApp Support</h2><p><b>+91 7836989477</b></p>
+<a class="button whatsapp" href="https://wa.me/917836989477?text=Hello%20XOLO%20Support%2C%20I%20need%20assistance." target="_blank" rel="noopener noreferrer">Chat with XOLO Support</a>
+<h2>What to Include</h2><ul><li>Your XOLO ID, if available.</li><li>A short description of your issue.</li><li>Relevant screenshots with passwords, OTPs and sensitive information removed.</li></ul>
+<div class="notice"><b>Security reminder:</b> Never share your password, OTP, UPI PIN, card PIN or complete banking credentials with anyone, including support.</div>
 </section>
 
-<section class="card">
-<h2>About XOLO Gay</h2>
-<p>XOLO Gay is an 18+ dating and social communication platform designed to help adults discover profiles and connect through private and group conversations.</p>
-<p class="small">The availability of individual features may depend on app version, account eligibility and service configuration.</p>
+<section class="card" id="about">
+<h1>About XOLO</h1><p>XOLO is an 18+ dating and social-connection platform for gay men, designed to help adults discover profiles and connect through available communication features.</p><p class="small">Feature availability may depend on app version, account eligibility and service configuration.</p>
 </section>
-
 </main>
-
 <footer>
-<div class="logo" style="font-size:28px">XOLO</div>
-<p>Meet. Connect. Be Yourself.</p>
-<p>© 2026 XOLO Gay. All rights reserved.</p>
-<p class="small">Official Legal & Support Website</p>
-<p>
-<a href="#privacy">Privacy</a> ·
-<a href="#terms">Terms</a> ·
-<a href="#delete-account">Account Deletion</a> ·
-<a href="#contact">Contact Us</a>
-</p>
-<a class="whatsapp" href="https://wa.me/917836989477" target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
+<div class="logo">XOLO</div><p>Meet. Connect. Be Yourself.</p>
+<div class="footerlinks"><a href="#privacy">Privacy Policy</a><a href="#terms">Terms &amp; Conditions</a><a href="#community">Community Guidelines</a><a href="#safety">18+ Safety</a><a href="#delete">Account Deletion</a><a href="#contact">Contact</a></div>
+<p class="small">© 2026 XOLO. All rights reserved.</p><p class="small">Official Legal &amp; Support Website</p>
+<a class="button whatsapp" href="https://wa.me/917836989477" target="_blank" rel="noopener noreferrer">WhatsApp Support</a>
 </footer>
-
 </body>
 </html>
